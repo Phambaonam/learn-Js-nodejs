@@ -9,7 +9,7 @@
  * phuong trinh co: vo nghiem, 2 nghiem phan biet, 1 nghiem kep
  * */
 
-exports.result = (a, b, c) => {
+exports.quadratic = (a, b, c) => {
     if (a == 0) {
         throw new Error('Input a is invalid');
     }

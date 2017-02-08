@@ -2,15 +2,15 @@
  * Created by phambaonam on 08/02/2017.
  */
 
-const quadaratic = require('./quadratic');
+const quadaratic = require('../quadaractic/quadratic');
 const chai = require('chai');
 chai.should();
 
 describe('Test result of quadaractic', function () {
 
     it('Input param a equal 0', function () {
-        ( function(){
-            quadaratic.result(0, 2, -4)
+        ( function () {
+            quadaratic.quadratic(0, 2, -4)
         }).should.throw('Input a is invalid');
     });
 
