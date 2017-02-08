@@ -1,0 +1,28 @@
+{
+  "name": "learn-js-node.js",
+  "version": "1.0.0",
+  "description": "this is folder which contain file code at techmaster.vn",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phambaonam/learn-Js-nodejs.git"
+  },
+  "keywords": [
+    "Js",
+    "node.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phambaonam/learn-Js-nodejs/issues"
+  },
+  "homepage": "https://github.com/Phambaonam/learn-Js-nodejs#readme"
+}
