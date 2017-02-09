@@ -2,9 +2,6 @@
  * Created by phambaonam on 08/02/2017.
  */
 
-
-let result = [], x1, x2, x, delta;
-
 /***
  *
  * @param a
@@ -18,25 +15,20 @@ exports.quadratic = (a, b, c) => {
         throw new Error('Input a is invalid');
     }
 
-    delta = b * b - 4 * a * c;
+    let delta = b * b - 4 * a * c;
+    let can_bac_hai = Math.sqrt;
 
-    x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    if (delta < 0) {
+        throw new Error('the equation has no solution');
+    }
 
-    x2 = (-b - Math.sqrt(delta)) / (2 * a);
-
-    x = Math.abs(b) / (2 * a);
+    let x1 = (-b + can_bac_hai(delta)) / (2 * a);
+    let x2 = (-b - can_bac_hai(delta)) / (2 * a);
 
     if (delta > 0) {
-
-        result.push(x1, x2);
-        return result;
-
-    } else if (delta == 0) {
-
-        return x;
-
+        return [x1, x2];
     } else {
-        throw new Error('the equation has no solution');
+        return [x1, x2];
     }
 };
 

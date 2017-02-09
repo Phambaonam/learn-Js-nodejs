@@ -6,13 +6,11 @@ const quadaratic = require('../quadaratic/quadratic');
 const chai = require('chai');
 chai.should();
 
-
 describe('Test input a of quadaratic', () => {
 
     it('Input param a equal 0', () => {
-        ( () => {
+        (() => {
             quadaratic.quadratic(0)
-
         }).should.throw('Input a is invalid');
     });
 
@@ -23,7 +21,7 @@ describe('Test input a of quadaratic', () => {
     });
 
     it('Delta equal 0', () => {
-        quadaratic.quadratic(1, 4, 4).should.equal(2);
+        quadaratic.quadratic(1, 4, 4).should.deep.equal([-2, -2]);
     });
 
     it('Delta greater than 0', () => {

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2fd7daa-bd77-4f59-8309-655040fd30e0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js" afterPath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js" afterPath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js" afterPath="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js" />
     </list>
@@ -21,12 +23,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quadratic.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quadratic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#49#116#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,18 +38,18 @@
       <file leaf-file-name="test_quadractic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo_quadratic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="demo_quadratic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,8 +83,8 @@
         <option value="$PROJECT_DIR$/08-02-2017/pt-bac-2/test/test_quadractic.js" />
         <option value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js" />
         <option value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js" />
-        <option value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js" />
         <option value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js" />
+        <option value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js" />
       </list>
     </option>
   </component>
@@ -97,11 +101,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/node_modules" />
+    <handled-path value="$PROJECT_DIR$/09-02-2017/demo-chai/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="x" value="-1" />
+    <option name="y" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="749" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -119,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,6 +203,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -338,8 +346,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Mocha.08-02-2017/giai-phuong-trinh/test/test_quadractic.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.test_quadractic.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.demo_quadratic.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.demo_quadratic.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.test_quadractic.js" />
         <item index="3" class="java.lang.String" itemvalue="Mocha.Test result  of quadaractic" />
         <item index="4" class="java.lang.String" itemvalue="Mocha.Test result  of quadaractic.Check delta less than 0" />
       </list>
@@ -364,29 +372,12 @@
       <workItem from="1486550066135" duration="2642000" />
       <workItem from="1486569076548" duration="967000" />
       <workItem from="1486598884407" duration="3371000" />
-      <workItem from="1486630821432" duration="2834000" />
+      <workItem from="1486630821432" duration="3079000" />
+      <workItem from="1486634873868" duration="922000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 34m 06s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 34m 24s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 34m 59s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 38m 36s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 39m 13s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 40m 49s.xml">
-      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 41m 04s.xml">
       <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -399,21 +390,39 @@
     <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 44m 05s.xml">
       <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 50m 02s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 16h 50m 43s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 17h 16m 16s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 17h 16m 28s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 17h 16m 39s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="08-02-2017_giai-phuong-trinh_test_test_quadractic_js - 2017.02.09 at 17h 17m 47s.xml">
+      <configuration name="08-02-2017/giai-phuong-trinh/test/test_quadractic.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21911000" />
+    <option name="totallyTimeSpent" value="23078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="744" extended-state="0" />
+    <frame x="-1" y="-1" width="1368" height="749" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24906786" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24869695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961039" sideWeight="0.5041014" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3961039" sideWeight="0.49589857" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961039" sideWeight="0.49589857" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.4973939" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.4973939" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -454,6 +463,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#116#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -470,14 +505,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js" />
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -492,14 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js" />
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -522,14 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js" />
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -557,35 +571,30 @@
     <entry file="file://$PROJECT_DIR$/07-02-2017/basicjs/demo_bmi.js" />
     <entry file="file://$PROJECT_DIR$/07-02-2017/basicjs/bmi/bmi.js" />
     <entry file="file://$PROJECT_DIR$/07-02-2017/basicjs/test/test_bmi.js" />
-    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaractic/quadratic.js" />
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/test/test_quadractic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="468">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/demo_quadratic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/08-02-2017/giai-phuong-trinh/quadaratic/quadratic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#49#116#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

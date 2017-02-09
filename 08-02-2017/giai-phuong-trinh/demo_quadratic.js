@@ -5,11 +5,9 @@
 const demo = require('./quadaratic/quadratic');
 
 try {
-    let result = demo.quadratic(1, 4, 3);
+    let result = demo.quadratic(1, 4, 4);
     console.log(result);
     console.log(typeof result);
-
-
 } catch (error) {
     console.log(error.message);
 }
