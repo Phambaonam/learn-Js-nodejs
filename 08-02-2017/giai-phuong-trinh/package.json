@@ -1,15 +1,22 @@
 {
-  "name": "08-02-2017",
+  "name": "giai-phuong-trinh",
   "version": "1.0.0",
-  "description": "learn how to write code understandable",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "giai phuong trinh bac hai",
+  "main": "demo_quadratic.js",
+  "directories": {
+    "test": "test"
   },
+  "scripts": {
+    "test": "mocha -S"
+  },
+  "keywords": [
+    "nodejs",
+    "Js"
+  ],
   "author": "Pham Bao Nam",
   "license": "MIT",
   "dependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "chai": "*",
+    "mocha": "*"
   }
 }
