@@ -15,7 +15,6 @@ chai.should();
 // beverages.should.have.property('tea').with.lengthOf(3);
 
 
-
 describe('Test input a of quadaratic', () => {
 
     it('Input param a equal 0', () => {
@@ -36,7 +35,7 @@ describe('Test input a of quadaratic', () => {
     });
 
     it('Delta greater than 0', () => {
-        quadaratic.quadratic(1, 4, 3).should.deep.equal([-1,-3]);
+        quadaratic.quadratic(1, 4, 3).should.deep.equal([-1, -3]);
     });
 
 });

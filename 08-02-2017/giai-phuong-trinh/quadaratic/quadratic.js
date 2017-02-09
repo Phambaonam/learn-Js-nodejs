@@ -29,7 +29,7 @@ exports.quadratic = (a, b, c) => {
     if (delta > 0) {
 
         result.push(x1, x2);
-        return  result;
+        return result;
 
     } else if (delta == 0) {
 
