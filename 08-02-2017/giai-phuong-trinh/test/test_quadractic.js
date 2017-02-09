@@ -6,7 +6,7 @@ const quadaratic = require('../quadaratic/quadratic');
 const chai = require('chai');
 chai.should();
 
-describe('Test quadaratic', () => {
+describe('Test  quadaratic', () => {
 
     it('Input param a equal 0', () => {
         (() => {
@@ -20,11 +20,7 @@ describe('Test quadaratic', () => {
         }).should.throw('the equation has no solution');
     });
 
-    it('Delta equal 0', () => {
-        quadaratic.quadratic(1, 4, 4).should.deep.equal([-2, -2]);
-    });
-
-    it('Delta greater than 0', () => {
+    it('Delta greater than  0', () => {
         quadaratic.quadratic(1, 4, 3).should.deep.equal([-1, -3]);
     });
 });
