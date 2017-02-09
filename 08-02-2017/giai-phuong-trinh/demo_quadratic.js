@@ -5,8 +5,11 @@
 const demo = require('./quadaractic/quadratic');
 
 try {
-    let result = demo.quadratic(1, 4, 2);
+    let delta = demo.quadratic(1, 4, 4);
+    console.log(delta);
+    let result = demo.checkResult(delta);
     console.log(result);
+
 } catch (error) {
     console.log(error.message);
 }

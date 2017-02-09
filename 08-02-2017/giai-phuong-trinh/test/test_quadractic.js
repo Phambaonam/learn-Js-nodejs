@@ -6,7 +6,7 @@ const quadaratic = require('../quadaractic/quadratic');
 const chai = require('chai');
 chai.should();
 
-describe('Test result of quadaractic', function () {
+describe('Test input a of quadaratic', function () {
 
     it('Input param a equal 0', function () {
         ( function () {
@@ -14,8 +14,21 @@ describe('Test result of quadaractic', function () {
         }).should.throw('Input a is invalid');
     });
 
-    // it('Check delta rather than 0',function() {
-    //     quadaratic.result(1, 4, 4).should.equal('delta rather than 0');
-    // });
 });
 
+describe('Test result  of quadaratic', function () {
+
+    let delta = quadaratic.quadratic(1, 4, 1);
+
+    it('Check delta less than 0', function () {
+        ( function (delta) {
+            quadaratic.checkResult(delta)
+        }).should.throw('the equation has no solution');
+    });
+
+    it('Check delta greater than 0', function () {
+        ( function (delta) {
+            quadaratic.checkResult(delta)
+        }).should.equal('ok');
+    });
+});

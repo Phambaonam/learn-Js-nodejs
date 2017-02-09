@@ -9,18 +9,41 @@
  * phuong trinh co: vo nghiem, 2 nghiem phan biet, 1 nghiem kep
  * */
 
+let result = [], x1, x2, x;
+
 exports.quadratic = (a, b, c) => {
+
     if (a == 0) {
         throw new Error('Input a is invalid');
     }
 
     let delta = b * b - 4 * a * c;
 
+    x1 = (-b + Math.sqrt(delta)) / (2 * a);
+
+    x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+    x = Math.abs(b) / (2 * a);
+
+    return delta;
+
+};
+
+exports.checkResult = (delta) => {
     if (delta > 0) {
-        return 'phuong trinh co 2 nghiem phan biet la: ' + 'x1 = ' + (-b + Math.sqrt(delta)) / (2 * a) + ', ' + 'x2 = ' + (-b - Math.sqrt(delta)) / (2 * a);
+
+        result.push(x1, x2);
+
+        return result;
+
     } else if (delta == 0) {
-        return 'phuong trinh co nghiem kep la: x1 = x2 = ' + Math.abs(b) / (2 * a);
+
+        result.push(x);
+
+        return result;
+
     } else {
-        return 'phuong trinh vo nghiem';
+        throw new Error('the equation has no solution')
     }
 };
+
