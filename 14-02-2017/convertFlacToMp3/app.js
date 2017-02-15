@@ -15,30 +15,30 @@ fs.readdir(testFolder,'utf8',recur=(err,files)=>{
 
 
 
-// recursive(testFolder, (err, files) => {
-//     files.forEach(file => {
-//         console.log(file);
-//         if (path.extname(file) === '.flac') {
-//             transcode(file);
-//         }
-//     });
-// });
-//
-// transcode = (file) => {
-//
-//     let decode = spawn('flac', [
-//         '--decode',
-//         '--stdout',
-//         file
-//     ]);
-//     let encode = spawn('lame', [
-//         '-b',
-//         '320',
-//         '-',
-//         file.replace('.flac', '.mp3')
-//     ]);
-//     decode.stdout.pipe(encode.stdin);
-// };
+recursive(testFolder, (err, files) => {
+    files.forEach(file => {
+        console.log(file);
+        if (path.extname(file) === '.flac') {
+            transcode(file);
+        }
+    });
+});
+
+transcode = (file) => {
+
+    let decode = spawn('flac', [
+        '--decode',
+        '--stdout',
+        file
+    ]);
+    let encode = spawn('lame', [
+        '-b',
+        '320',
+        '-',
+        file.replace('.flac', '.mp3')
+    ]);
+    decode.stdout.pipe(encode.stdin);
+};
 
 
 
