@@ -2,30 +2,44 @@
  * Created by phambaonam on 14/02/2017.
  */
 
-const testFolder = './flac';
+const pathFolder = './music';
 const fs = require('fs');
 const spawn = require('child_process').spawn;
 const path = require('path');
 const recursive = require('recursive-readdir');
 const Promise = require("bluebird");
 
-fs.readdir(testFolder,'utf8',recur=(err,files)=>{
-    console.log(files);
-});
+let arr = [];
 
 
-
-recursive(testFolder, (err, files) => {
+/***
+ * Read file flac
+ * @param err
+ * @param files
+ * @returns {Array}
+ * @constructor
+ */
+ReadFileFlac = (err, files) => {
+    console.log(1);
+    if (err) {
+        throw err;
+    }
     files.forEach(file => {
-        console.log(file);
         if (path.extname(file) === '.flac') {
-            transcode(file);
+            arr.push({name: file, status: 'flac'});
+            convertFileFlac(file);
         }
     });
-});
+    return arr;
+};
 
-transcode = (file) => {
 
+/***
+ * convert file flac
+ * @param file
+ */
+convertFileFlac = (file) => {
+    console.log(2);
     let decode = spawn('flac', [
         '--decode',
         '--stdout',
@@ -38,7 +52,44 @@ transcode = (file) => {
         file.replace('.flac', '.mp3')
     ]);
     decode.stdout.pipe(encode.stdin);
+    return encode;
 };
 
 
 
+/***
+ * Read file mp3
+ * @param err
+ * @param files
+ * @constructor
+ */
+ReadFileMp3 = (err, files) => {
+    console.log(3);
+    if (err) {
+        throw err;
+    }
+    files.forEach(file => {
+        if (path.extname(file) === '.mp3') {
+            console.log(file);
+            fs.readFile(file, ReadDataMp3);
+        }
+    });
+};
+
+/***
+ * read data mp3
+ * @param err
+ * @param data
+ * @constructor
+ */
+ReadDataMp3 = (err, data) => {
+    console.log(4);
+    if (err) {
+        throw err;
+    }
+    console.log(data);
+};
+
+//read path file
+recursive(pathFolder, ReadFileFlac);
+recursive(pathFolder, ReadFileMp3);

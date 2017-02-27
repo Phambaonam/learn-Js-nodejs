@@ -1,0 +1,14 @@
+{
+  "name": "ve-hinh-tu-duy-thuat-toan",
+  "version": "1.0.0",
+  "description": "vẽ hình rèn luyện tư duy, thuật toán",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -S"
+  },
+  "keywords": [
+    "giải thuật"
+  ],
+  "author": "Phạm Bảo Nam",
+  "license": "MIT"
+}
