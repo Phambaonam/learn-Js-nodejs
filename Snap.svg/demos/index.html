@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snap.svg</title>
+    <script src="../dist/snap.svg-min.js " ></script>
+    <style>
+        body {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+<svg id="svg" width="0" height="0">
+    <pattern id="pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewBox="0 0 10 10">
+        <path d="M-5,0,10,15M0-5,15,10" stroke="white" stroke-width="5"/>
+    </pattern>
+</svg>
+
+<script>
+    var s = Snap("#svg");
+    // Lets create big circle in the middle:
+    var bigCircle = s.circle(150, 150, 100);
+    // By default its black, lets change its attributes
+    bigCircle.attr({
+        fill: "#bada55",
+        stroke: "#000",
+        strokeWidth: 5
+    });
+    // Now lets create another small circle:
+    var smallCircle = s.circle(100, 150, 70);
+    // Lets put this small circle and another one into a group:
+    var discs = s.group(smallCircle, s.circle(200, 150, 70));
+
+</script>
+</body>
+</html>
