@@ -1,6 +1,3 @@
-/**
- * Created by phambaonam on 09/03/2017.
- */
 /***
  *  khống chế xếp quân hậu theo
  * @param rows

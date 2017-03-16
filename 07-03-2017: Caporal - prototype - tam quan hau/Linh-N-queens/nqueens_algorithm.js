@@ -2,7 +2,6 @@
  * @param: n
  * @return: array of all possible solutions and its length
  * */
-
 solve_Nqueens = (n) => {
     const init = [[]];
     const totalSolutions = eachRow(0, n, init);
@@ -16,22 +15,23 @@ solve_Nqueens = (n) => {
  * @param: prevSolution: the solutions are found in previous rows
  * @return: an array of arrays that are possible solutions
  * */
-
 eachRow = (row, columns, prevSolutions) => {
    //console.log(row);
    //console.log(columns);
  	let newSolutions = [];
  	let prev = prevSolutions;
-   
+    console.log(prev);
     for (let i = 0; i< prev.length; i++) {
     	let solution = prev[i];
-      //loop through n columns
+        console.log(solution);
+
+        //loop through n columns
     	for (let j = 0; j < columns; j++) {
         //check if possible to place a queen in column j
         	if (meetContraints(row, j, solution)) {
                 // can place a queen at column j 
             	newSolutions.push(solution.concat([j]));
-              //console.log(newSolutions);           
+              console.log(newSolutions);
           } 
     	}
 	  }
@@ -44,7 +44,6 @@ eachRow = (row, columns, prevSolutions) => {
     return result;   
 };
 
-
 /* Function to check contraints
  * @param: rows : check through all rows from 0 to rows - 1
  * @param: column = j in main function eachRow()
@@ -52,9 +51,11 @@ eachRow = (row, columns, prevSolutions) => {
  * value at each index is the column where queen is placed in each row
  * @return: True if in column j, no queen is placed from 0 to rows - 1
  * */
+
 // each solution is an array
 meetContraints = (rows, column, solution) => {
     for (let i = 0; i < rows; i++) {
+        console.log(solution[i]);
         if (solution[i] === column ||
             Math.abs(column - solution[i]) === Math.abs(rows - i)) {
             return false;
@@ -62,6 +63,5 @@ meetContraints = (rows, column, solution) => {
     }
     return true;
 };
-
 
 console.log(solve_Nqueens(4));
