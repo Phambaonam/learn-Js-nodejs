@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea {
+    width: 50%;
+    height: 400px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+}
+
+#swap {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    /*border: 1px solid lightseagreen;*/
+}
+
+#chatbox {
+    width: 100%;
+}
+
+.box {
+    text-align: center;
+}
+
+.box > textarea {
+    width: 50%;
+    height: 100px;
+}
+
+h2, #name {
+    display: inline-block;
+}

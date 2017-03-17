@@ -41,6 +41,7 @@
     "recursive-readdir": "^2.1.1",
     "shelljs": "^0.7.6",
     "shortid": "^2.2.8",
+    "socket.io": "^1.7.3",
     "svg.draggable.js": "^2.2.1"
   },
   "devDependencies": {
