@@ -1,3 +1,6 @@
+/**
+ * Created by NamDuyen on 20/03/2017.
+ */
 var app = require('express')();
 // var server = require('http').Server(app);
 // var io = require('socket.io')(server);
@@ -29,5 +32,4 @@ app.get('/', function (req, res) {
 //     });
 //
 // });
-
 

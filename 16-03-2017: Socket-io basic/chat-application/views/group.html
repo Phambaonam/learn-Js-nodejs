@@ -32,37 +32,39 @@
         }
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Login</title>
 </head>
 <body>
 <div id="wrap">
-    <h1>Đăng nhập vào mà chat đi thôi</h1>
-    <div id="login">
+    <h1>Bạn đã login thanh công, bạn có thể chat với bạn bè trong nhóm.</h1>
+    <hr>
+    <div id="user">
         <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-6">
-                <form  method="post" action="group">
-                    <input id="user"  name="username" type="text" placeholder="Tên Đăng Nhập ...">
-                    <button id="submit" type="submit">Login</button>
-                </form>
-            </div>
+            <div class="col-md-4"><h3>Xin Chào <a href="#">{{data.username}}</a></h3></div>
             <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button><a href="/">Log out</a></button>
+            </div>
         </div>
     </div>
-
+    <hr>
     <h1>All Group</h1>
     <div class="group">
         <div class="row">
-            <div class="col-md-4">
-                <p>Node.js</p>
-            </div>
-            <div class="col-md-4">
-                <p>10 <span>Members</span></p>
-            </div>
+            <form action="detail-chat" method="post">
+                <div class="col-md-4">
+                    <p name="mygroup" >Node.js</p>
+                </div>
+                <div class="col-md-4">
+                    <p>10 <span>Members</span></p>
+                </div>
 
-            <div class="col-md-4">
-                <button class="join">Join</button>
-            </div>
+                <div class="col-md-4">
+                    <button class="join" type="submit">Join</button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -78,7 +80,7 @@
             </div>
 
             <div class="col-md-4">
-                <button class="join">Join</button>
+                <button class="join"><a href="/group">Join</a></button>
             </div>
         </div>
     </div>
@@ -95,7 +97,7 @@
             </div>
 
             <div class="col-md-4">
-                <button class="join">Join</button>
+                <button class="join"><a href="/group">Join</a></button>
             </div>
         </div>
     </div>
@@ -112,25 +114,13 @@
             </div>
 
             <div class="col-md-4">
-                <button class="join">Join</button>
+                <button class="join"><a href="/group">Join</a></button>
             </div>
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.join').click(function () {
-            alert('Bạn phải Login đã!');
-        });
-        $('#submit').click(function () {
-            let username = $('#user').val();
-            if(username == ''){
-                alert('Bạn phải điền tên đăng nhập!');
-            }
-        });
-    });
 
-</script>
+<script src="/socket.io/socket.io.js"></script>
+
 </body>
 </html>
