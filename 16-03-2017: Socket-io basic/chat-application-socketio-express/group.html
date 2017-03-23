@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    h1, h4, p {
+        text-align: center;
+    }
+
+    #wrap {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 15px;
+    }
+
+    #waitRoom {
+        height: 160px;
+        width: 100%;
+        border: 1px solid green;
+    }
+
+    #users {
+        border: 1px solid black;
+        height: 300px;
+    }
+
+    #data {
+        width: 100%;
+        height: 80px;
+    }
+    #chatContent{
+        width: 100%;
+        height: 300px;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<div id="wrap">
+
+    <h1>Ứng dụng chat</h1>
+    <div style="height: 30px"></div>
+    <div class="row">
+        <div class="col-md-4">
+
+            <div id="login">
+                <input type="text" id="name" placeholder="Nhập tên đăng nhập ...">
+                <button onclick="addUsers()">Login</button>
+            </div>
+            <div style="height: 30px"></div>
+            <h4>All Users</h4>
+            <div id="users">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div style="height: 65px"></div>
+            <h4>Thông báo</h4>
+            <div id="waitRoom">
+
+            </div>
+            <div style="height: 30px"></div>
+
+            <textarea id="data"></textarea>
+            <button id ="datasend">Gửi</button>
+        </div>
+        <div class="col-md-4">
+            <div style="height: 50px"></div>
+            <h4>Nội dung</h4>
+            <textarea  id="chatContent" ></textarea>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    let socket = io('http://localhost:3000');
+
+    function addUsers() {
+        let user = $('#name').val();
+        socket.emit('addUser', user);
+    }
+
+    // listener, whenever the server emits 'updateusers', this updates the username list
+        socket.on('updateusers', function (usernames) {
+            $('#users').empty();
+           for(username in usernames){
+               $('#users').append('<p>' + usernames[username] + '</p>');
+           }
+        });
+
+
+    // listener, whenever the server emits 'waitRoom'
+    socket.on('waitRoom', function (username) {
+        if (username === '') {
+            alert('Bạn phải điền tên đăng nhập!')
+        } else {
+            $('#waitRoom').append('<p>' + username + ' đã tham gia' + '</p>');
+        }
+    });
+
+    socket.on('sendchatGroup',function (data) {
+        $('#chatContent').append(`\n${data.user} : ${data.msg}`);
+    });
+
+    //    // on load of page
+        $(function(){
+            // when the client clicks SEND
+            $('#datasend').click( function() {
+                let user = $('#name').val();
+                let msg = $('#data').val();
+                // tell server to execute 'sendchat' and send along one parameter
+                socket.emit('sendchatPerson', {msg:msg,user:user});
+                $('#chatContent').append('\n'+user +' : '.concat(msg))
+            });
+
+            // when the client hits ENTER on their keyboard
+            $('#data').keypress(function(e) {
+                if(e.which == 13) {
+                    $(this).blur();
+                    $('#datasend').focus().click();
+                }
+            });
+        });
+
+</script>

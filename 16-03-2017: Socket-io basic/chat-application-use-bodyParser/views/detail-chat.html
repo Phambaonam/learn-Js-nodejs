@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1, h4,h5 ,p {
+            text-align: center;
+        }
+        a:hover{
+            text-decoration: none;
+            color: green;
+        }
+        #content {
+            width: 80%;
+            height: 800px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        #chatbox {
+            height: 200px;
+            width: 100%;
+        }
+        #input-message>textarea{
+            width: 84%;
+            height: 100px;
+            margin-bottom: -8px;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Chat</title>
+</head>
+<body>
+<div id="content">
+    <h1> Chào mừng bạn đến nhóm với nhóm {{detailGroup.name}} </h1>
+    <div style="height: 50px"></div>
+    <div id="user">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <h3 >Xin Chào <a  class ="name" href="#">{{user.username}}</a></h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <button><a href="/">Log out</a></button>
+            </div>
+        </div>
+    </div>
+    <div style="height: 50px"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="socket" id="group">
+                <h4>Your Groups</h4>
+                <h5><a href="#">FIFA ONLINE 3</a></h5>
+                <h5><a href="#">DOTA 2</a></h5>
+                <h5><a href="#">Sim Số Đẹp</a></h5>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="socket" >
+                <h4>Nội Dung Chat</h4>
+                <textarea id="chatbox" ></textarea><br>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="socket" id="friends">
+                <h4>Friends</h4>
+                <p><a href="#">Thanh Thanh</a></p>
+                <p><a href="#">Ha Ha</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="input-message">
+                <textarea id="chatContent"  placeholder="Viết tin nhắn ... "></textarea>
+                <button onclick="sendChat()">Send</button>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io('http://localhost:3000');
+
+    socket.on('welcome', (data) => {
+        $('#chatbox').append(data.message);
+    });
+
+    socket.on('chatGroup',function (data) {
+        $('#chatbox').append(`\n${data.chatter}:${data.message}`);
+    });
+
+    function sendChat() {
+        let msg = $('#chatContent').val();
+        let chatter = $('.name').text();
+        socket.emit('chatGroup',{ message: msg, chatter: chatter});
+        $('#chatbox').append('\n'+ chatter+' : '.concat(msg));
+    }
+</script>
+
+</body>
+</html>
