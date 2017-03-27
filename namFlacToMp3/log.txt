@@ -1,4 +1,0 @@
-File /home/phambaonam/Desktop/learn-Js-nodejs/namFlacToMp3/Flac/1/1.flac caught error
-File /home/phambaonam/Desktop/learn-Js-nodejs/namFlacToMp3/Flac/1/test.flac caught error
-File /home/phambaonam/Desktop/learn-Js-nodejs/namFlacToMp3/Flac/error.flac caught error
-File /home/phambaonam/Desktop/learn-Js-nodejs/namFlacToMp3/Flac/test.flac caught error
